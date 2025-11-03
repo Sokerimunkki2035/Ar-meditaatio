@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valittavat Meditaatiot 🎧</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; color: #333; }
+        h1, h2 { color: #5a5a8a; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        ul { list-style-type: none; padding: 0; }
+        li { background: #fff; margin-bottom: 8px; padding: 10px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        li:hover { transform: translateX(5px); background-color: #e6e6ee; cursor: pointer; }
+        a { text-decoration: none; color: inherit; display: block; }
+        .duration-1 { border-left: 5px solid #4CAF50; /* 1 min (Vihreä) */ }
+        .duration-2 { border-left: 5px solid #FF9800; /* 2 min (Oranssi) */ }
+        .duration-1 a:hover { color: #388E3C; } /* Tummempi vihreä hoverissa */
+        .duration-2 a:hover { color: #F57C00; } /* Tummempi oranssi hoverissa */
+    </style>
+</head>
+<body>
+
+    <h1>Valitse meditaatioharjoitus 👇</h1>
+    
+    <hr>
+
+    <section>
+        <h2>30 x 1 minuutin pikalataukset (Lataa akkusi 🔋)</h2>
+        <ul>
+            <script>
+                const otsikot1min = [
+                    "Hengitysankkuri", "Mielentarkistus", "Jännityksen vapautus", "Lyhyt kehoskannaus", 
+                    "Kiitollisuuden hetki", "Keskittyminen ääniin", "Aistinvarainen havainnointi", 
+                    "Maku-meditaatio", "Värin keskittäminen", "Iloinen muisto", "Sydämen lämpö", 
+                    "Pysähdy ja kuuntele", "Maa-ankkuri", "Veden virtaus", "Tulen lämpö", 
+                    "Ilman liike", "Kolme hyvää asiaa", "Pieni tauko", "Läsnäolo käsissä", 
+                    "Jalkapohjien tuntemukset", "Rentoutus otsassa", "Positiivinen lause", 
+                    "Lopeta hetkeksi", "Tietoinen venytys", "Keskittyminen valoon", 
+                    "Hymy ja huokaus", "Helppo hengitys", "Vartalon tuntemukset", 
+                    "Mieli lepoon", "Uusi alku"
+                ];
+
+                for (let i = 0; i < 30; i++) {
+                    const nimi = otsikot1min[i];
+                    // Käytä "#" toistaiseksi linkkinä. Korvaa tämä myöhemmin oikealla tiedostopolulla (esim. 'meditaatio-1-hengitys.mp3')
+                    document.write('<li class="duration-1"><a href="#meditaatio-' + (i+1) + '">' + (i+1) + '. ' + nimi + ' (1 min)</a></li>');
+                }
+            </script>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>30 x 2 minuutin lyhyet keskittymiset (Pieni rauha 🕊️)</h2>
+        <ul>
+            <script>
+                const otsikot2min = [
+                    "Syvä hengitys ja laskenta", "Keho ja mieli", "Tunteiden havainnointi", 
+                    "Aamun intention asettaminen", "Päivän lopetus", "Keskittyminen askeleisiin", 
+                    "Kohti tyyneyttä", "Hyväksyminen", "Myötätunto itseä kohtaan", 
+                    "Pieni kävely-meditaatio", "Vaikeuden kohtaaminen", "Rentoutuminen kasvoihin", 
+                    "Selän suoruus", "Omien tarpeiden kuuntelu", "Epämukavuuden syleily", 
+                    "Valo ja varjo", "Kaikki on hyvin", "Irtipäästäminen", 
+                    "Mielen tyhjennys", "Hetken lämpö", "Kiireettömyys", 
+                    "Kuuntelun taito", "Sisäinen hiljaisuus", "Energiatasojen tarkistus", 
+                    "Rentoutuminen jaloissa", "Kiitos ja anteeksi", "Oma tila", 
+                    "Kehon painopiste", "Ojentautuminen", "Tyyneys ja läsnäolo"
+                ];
+
+                for (let i = 0; i < 30; i++) {
+                    const nimi = otsikot2min[i];
+                    // Käytä "#" toistaiseksi linkkinä. Korvaa tämä myöhemmin oikealla tiedostopolulla (esim. 'meditaatio-31-syva-hengitys.mp3')
+                    document.write('<li class="duration-2"><a href="#meditaatio-' + (i+31) + '">' + (i+1) + '. ' + nimi + ' (2 min)</a></li>');
+                }
+            </script>
+        </ul>
+    </section>
+
+</body>
+</html>
